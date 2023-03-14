@@ -1,0 +1,18 @@
+Input:
+1. Nomor telefon pelanggan
+2. Service request
+
+Output:
+1. Perbaruan saldo pulsa pengirim
+2. Perbaruan saldo pulsa tujuan
+3. Konfirmasi service
+
+Process:
+1. Pengirim melakukan service requested kepada *858#
+2. *858# menerima service request tersebut dan mengirimkan menu kepada pengirim
+3. Pengirim memasukkan nomor destinasi dan nomor sendiri
+4. Nomor pengirim dan tujuan akan divalidasi
+5. Pengirim akan memasukkan nominal yang ingin di transer
+6. Saldo pulsa pengirim akan di cek apakah dapat mengirim nominal tsb, hal ini dilakukan oleh ISP
+7. Jika semua sudah divalidasi, makan ISP akan mengirimkan konfirmasi kepada pengirim
+8. Jika hasil validasi adalah disetujui, maka nominal saldo pengirim dan tujuan akan diperbarukan
